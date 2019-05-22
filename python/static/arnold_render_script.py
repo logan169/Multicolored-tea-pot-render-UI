@@ -13,6 +13,13 @@ from arnold import AiBegin, AiMsgInfo, AiMsgSetConsoleFlags, AI_LOG_INFO, AiEnd
 import maya.standalone
 maya.standalone.initialize("Python")
 
+# commenting 
+
+# import maya.standalone
+# maya.standalone.initialize("Python")
+# removing if name == "__main__"
+# and fixing the path was making the code worked 
+# directly in maya
 
 
 def open_teapot_file(maya_scene_file):
