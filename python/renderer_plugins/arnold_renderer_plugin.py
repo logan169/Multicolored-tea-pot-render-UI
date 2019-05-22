@@ -62,7 +62,7 @@ class ArnoldRendererPlugin(BaseRendererPlugin):
         """
         picture_filepath = self.find_file_by_ext(
             self.model._STATIC_FOLDER_PATH,
-            'teapot.png'
+            'teapot'
         )
 
         if not picture_filepath:
@@ -111,7 +111,7 @@ class ArnoldRendererPlugin(BaseRendererPlugin):
 
         for root, dirs, filenames in os.walk(folder_path):
             for filename in filenames:
-                if filename.endswith(ext):
+                if ext in filename:
                     return os.path.join(root, filename)
 
         return False

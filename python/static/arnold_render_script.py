@@ -1,13 +1,18 @@
 # -*- coding: utf-8 -*-
 # This file should stay in static folder
 
+
+
 import os
+import argparse
 import maya.cmds as cmds
+
 from mtoa.cmds.arnoldRender import arnoldRender
 from arnold import AiBegin, AiMsgInfo, AiMsgSetConsoleFlags, AI_LOG_INFO, AiEnd
 
 import maya.standalone
 maya.standalone.initialize("Python")
+
 
 
 def open_teapot_file(maya_scene_file):
@@ -153,8 +158,7 @@ if __name__ == "__main__":
     args = vars(parser.parse_args())
 
     # files path
-    curr_file_path = os.path.abspath(__file__)
-    curr_dir_path = os.path.dirname(curr_file_path)
+    curr_dir_path = os.path.dirname(".")
     maya_scene_file = os.path.join(curr_dir_path, "teapot.ma")
 
     # open model teapot file
