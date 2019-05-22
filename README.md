@@ -35,6 +35,7 @@ Otherthise you may face import errors when the script will run the rendering pro
 
 `sys.path.append("/opt/solidangle/mtoa/2019/scripts/") # For arnold & mtoa`
 
+Maya working directory should be setted to the static folder where the teapot.ma is found 
 
 ## How it works
 
@@ -70,4 +71,4 @@ Picture and log file are saved in the static folder by the script and are then l
 ![result1](/static/teapot1.png)
 
 ### Comments
-Had lot of issue settings up maya to work with the tools, I ended up having some segmentation fault erros while trying to run arnold renderer script in a maya.standalone context except for two times where it did works. There is something I've probably missed I think, because I've test the  code directly in maya and I was able to get rendered pictures/log file...
+Had lot of issue settings up maya to work with the tools, I ended up having some segmentation fault errors while trying to run arnold renderer script in a maya.standalone context except for two times where it did works. There is something I've probably missed I think, because I've test the  code directly in maya and I was able to get rendered pictures/log file...
